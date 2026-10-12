@@ -1,0 +1,1262 @@
+{
+ "hours_per_run": 24.0,
+ "seeds": [
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "summary": {
+  "none": {
+   "collisions": 1.4,
+   "near_misses": 0,
+   "herds_exposed": 14.2,
+   "herds_missed": 14.2,
+   "train_delay_total_min": 0.0,
+   "train_delay_avg_min": 0.0,
+   "trains_passed": 143.8,
+   "alerts_total": 0,
+   "actionable_alerts": 0,
+   "false_actionable_alerts": 0,
+   "trains_restricted": 0,
+   "lead_time_p50_s": null,
+   "ack_p95_s": null,
+   "detect_to_alert_p50_s": null,
+   "uplink_kb": 21977.2,
+   "video_equiv_gb": 777.6
+  },
+  "blanket": {
+   "collisions": 1.2,
+   "near_misses": 0,
+   "herds_exposed": 14.2,
+   "herds_missed": 14.2,
+   "train_delay_total_min": 402.9,
+   "train_delay_avg_min": 2.8,
+   "trains_passed": 143,
+   "alerts_total": 0,
+   "actionable_alerts": 0,
+   "false_actionable_alerts": 0,
+   "trains_restricted": 0,
+   "lead_time_p50_s": null,
+   "ack_p95_s": null,
+   "detect_to_alert_p50_s": null,
+   "uplink_kb": 21977.8,
+   "video_equiv_gb": 777.6
+  },
+  "gajarakshak": {
+   "collisions": 0,
+   "near_misses": 1,
+   "herds_exposed": 14.2,
+   "herds_missed": 0,
+   "train_delay_total_min": 74.1,
+   "train_delay_avg_min": 0.5,
+   "trains_passed": 143.6,
+   "alerts_total": 84.4,
+   "actionable_alerts": 41,
+   "false_actionable_alerts": 1.6,
+   "trains_restricted": 84.6,
+   "lead_time_p50_s": 290.7,
+   "ack_p95_s": 57.5,
+   "detect_to_alert_p50_s": 4.0,
+   "uplink_kb": 22011.5,
+   "video_equiv_gb": 777.6
+  },
+  "gajarakshak+kavach": {
+   "collisions": 0,
+   "near_misses": 0.8,
+   "herds_exposed": 14.2,
+   "herds_missed": 0,
+   "train_delay_total_min": 74.8,
+   "train_delay_avg_min": 0.5,
+   "trains_passed": 143.8,
+   "alerts_total": 84.2,
+   "actionable_alerts": 41,
+   "false_actionable_alerts": 1.6,
+   "trains_restricted": 87.4,
+   "lead_time_p50_s": 316.6,
+   "ack_p95_s": 13.8,
+   "detect_to_alert_p50_s": 4.0,
+   "uplink_kb": 22011.5,
+   "video_equiv_gb": 777.6
+  }
+ },
+ "runs": {
+  "none": [
+   {
+    "mode": "none",
+    "seed": 1,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 2,
+    "near_misses": 0,
+    "herds_exposed": 15,
+    "herds_missed": 15,
+    "detect_to_alert_p50_s": null,
+    "detect_to_alert_p95_s": null,
+    "alerts_total": 0,
+    "alerts_by_level": {},
+    "actionable_alerts": 0,
+    "false_actionable_alerts": 0,
+    "hot_zones": [],
+    "trains_passed": 142,
+    "train_delay_total_min": 0.0,
+    "train_delay_avg_min": 0.0,
+    "trains_restricted": 0,
+    "escalations": 0,
+    "lead_time_p50_s": null,
+    "ack_p95_s": null,
+    "verification": {
+     "requested": 0,
+     "confirmed": 0,
+     "rejected": 0,
+     "reused": 0
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 22468.9,
+    "video_equiv_gb": 777.6,
+    "wall_s": 7.6
+   },
+   {
+    "mode": "none",
+    "seed": 2,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 0,
+    "near_misses": 0,
+    "herds_exposed": 10,
+    "herds_missed": 10,
+    "detect_to_alert_p50_s": null,
+    "detect_to_alert_p95_s": null,
+    "alerts_total": 0,
+    "alerts_by_level": {},
+    "actionable_alerts": 0,
+    "false_actionable_alerts": 0,
+    "hot_zones": [],
+    "trains_passed": 140,
+    "train_delay_total_min": 0.0,
+    "train_delay_avg_min": 0.0,
+    "trains_restricted": 0,
+    "escalations": 0,
+    "lead_time_p50_s": null,
+    "ack_p95_s": null,
+    "verification": {
+     "requested": 0,
+     "confirmed": 0,
+     "rejected": 0,
+     "reused": 0
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 20258.9,
+    "video_equiv_gb": 777.6,
+    "wall_s": 6.8
+   },
+   {
+    "mode": "none",
+    "seed": 3,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 2,
+    "near_misses": 0,
+    "herds_exposed": 18,
+    "herds_missed": 18,
+    "detect_to_alert_p50_s": null,
+    "detect_to_alert_p95_s": null,
+    "alerts_total": 0,
+    "alerts_by_level": {},
+    "actionable_alerts": 0,
+    "false_actionable_alerts": 0,
+    "hot_zones": [],
+    "trains_passed": 146,
+    "train_delay_total_min": 0.0,
+    "train_delay_avg_min": 0.0,
+    "trains_restricted": 0,
+    "escalations": 0,
+    "lead_time_p50_s": null,
+    "ack_p95_s": null,
+    "verification": {
+     "requested": 0,
+     "confirmed": 0,
+     "rejected": 0,
+     "reused": 0
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 22858.9,
+    "video_equiv_gb": 777.6,
+    "wall_s": 7.9
+   },
+   {
+    "mode": "none",
+    "seed": 4,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 3,
+    "near_misses": 0,
+    "herds_exposed": 16,
+    "herds_missed": 16,
+    "detect_to_alert_p50_s": null,
+    "detect_to_alert_p95_s": null,
+    "alerts_total": 0,
+    "alerts_by_level": {},
+    "actionable_alerts": 0,
+    "false_actionable_alerts": 0,
+    "hot_zones": [],
+    "trains_passed": 146,
+    "train_delay_total_min": 0.0,
+    "train_delay_avg_min": 0.0,
+    "trains_restricted": 0,
+    "escalations": 0,
+    "lead_time_p50_s": null,
+    "ack_p95_s": null,
+    "verification": {
+     "requested": 0,
+     "confirmed": 0,
+     "rejected": 0,
+     "reused": 0
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 22737.7,
+    "video_equiv_gb": 777.6,
+    "wall_s": 7.5
+   },
+   {
+    "mode": "none",
+    "seed": 5,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 0,
+    "near_misses": 0,
+    "herds_exposed": 12,
+    "herds_missed": 12,
+    "detect_to_alert_p50_s": null,
+    "detect_to_alert_p95_s": null,
+    "alerts_total": 0,
+    "alerts_by_level": {},
+    "actionable_alerts": 0,
+    "false_actionable_alerts": 0,
+    "hot_zones": [],
+    "trains_passed": 145,
+    "train_delay_total_min": 0.0,
+    "train_delay_avg_min": 0.0,
+    "trains_restricted": 0,
+    "escalations": 0,
+    "lead_time_p50_s": null,
+    "ack_p95_s": null,
+    "verification": {
+     "requested": 0,
+     "confirmed": 0,
+     "rejected": 0,
+     "reused": 0
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 21561.6,
+    "video_equiv_gb": 777.6,
+    "wall_s": 7.6
+   }
+  ],
+  "blanket": [
+   {
+    "mode": "blanket",
+    "seed": 1,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 2,
+    "near_misses": 0,
+    "herds_exposed": 15,
+    "herds_missed": 15,
+    "detect_to_alert_p50_s": null,
+    "detect_to_alert_p95_s": null,
+    "alerts_total": 0,
+    "alerts_by_level": {},
+    "actionable_alerts": 0,
+    "false_actionable_alerts": 0,
+    "hot_zones": [],
+    "trains_passed": 141,
+    "train_delay_total_min": 357.7,
+    "train_delay_avg_min": 2.54,
+    "trains_restricted": 0,
+    "escalations": 0,
+    "lead_time_p50_s": null,
+    "ack_p95_s": null,
+    "verification": {
+     "requested": 0,
+     "confirmed": 0,
+     "rejected": 0,
+     "reused": 0
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 22461.4,
+    "video_equiv_gb": 777.6,
+    "wall_s": 7.6
+   },
+   {
+    "mode": "blanket",
+    "seed": 2,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 0,
+    "near_misses": 0,
+    "herds_exposed": 10,
+    "herds_missed": 10,
+    "detect_to_alert_p50_s": null,
+    "detect_to_alert_p95_s": null,
+    "alerts_total": 0,
+    "alerts_by_level": {},
+    "actionable_alerts": 0,
+    "false_actionable_alerts": 0,
+    "hot_zones": [],
+    "trains_passed": 140,
+    "train_delay_total_min": 413.8,
+    "train_delay_avg_min": 2.96,
+    "trains_restricted": 0,
+    "escalations": 0,
+    "lead_time_p50_s": null,
+    "ack_p95_s": null,
+    "verification": {
+     "requested": 0,
+     "confirmed": 0,
+     "rejected": 0,
+     "reused": 0
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 20258.9,
+    "video_equiv_gb": 777.6,
+    "wall_s": 7.5
+   },
+   {
+    "mode": "blanket",
+    "seed": 3,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 1,
+    "near_misses": 0,
+    "herds_exposed": 18,
+    "herds_missed": 18,
+    "detect_to_alert_p50_s": null,
+    "detect_to_alert_p95_s": null,
+    "alerts_total": 0,
+    "alerts_by_level": {},
+    "actionable_alerts": 0,
+    "false_actionable_alerts": 0,
+    "hot_zones": [],
+    "trains_passed": 145,
+    "train_delay_total_min": 437.6,
+    "train_delay_avg_min": 3.02,
+    "trains_restricted": 0,
+    "escalations": 0,
+    "lead_time_p50_s": null,
+    "ack_p95_s": null,
+    "verification": {
+     "requested": 0,
+     "confirmed": 0,
+     "rejected": 0,
+     "reused": 0
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 22866.9,
+    "video_equiv_gb": 777.6,
+    "wall_s": 8.3
+   },
+   {
+    "mode": "blanket",
+    "seed": 4,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 2,
+    "near_misses": 0,
+    "herds_exposed": 16,
+    "herds_missed": 16,
+    "detect_to_alert_p50_s": null,
+    "detect_to_alert_p95_s": null,
+    "alerts_total": 0,
+    "alerts_by_level": {},
+    "actionable_alerts": 0,
+    "false_actionable_alerts": 0,
+    "hot_zones": [],
+    "trains_passed": 146,
+    "train_delay_total_min": 413.4,
+    "train_delay_avg_min": 2.83,
+    "trains_restricted": 0,
+    "escalations": 0,
+    "lead_time_p50_s": null,
+    "ack_p95_s": null,
+    "verification": {
+     "requested": 0,
+     "confirmed": 0,
+     "rejected": 0,
+     "reused": 0
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 22760.7,
+    "video_equiv_gb": 777.6,
+    "wall_s": 7.9
+   },
+   {
+    "mode": "blanket",
+    "seed": 5,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 1,
+    "near_misses": 0,
+    "herds_exposed": 12,
+    "herds_missed": 12,
+    "detect_to_alert_p50_s": null,
+    "detect_to_alert_p95_s": null,
+    "alerts_total": 0,
+    "alerts_by_level": {},
+    "actionable_alerts": 0,
+    "false_actionable_alerts": 0,
+    "hot_zones": [],
+    "trains_passed": 143,
+    "train_delay_total_min": 392.1,
+    "train_delay_avg_min": 2.74,
+    "trains_restricted": 0,
+    "escalations": 0,
+    "lead_time_p50_s": null,
+    "ack_p95_s": null,
+    "verification": {
+     "requested": 0,
+     "confirmed": 0,
+     "rejected": 0,
+     "reused": 0
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 21541.0,
+    "video_equiv_gb": 777.6,
+    "wall_s": 7.9
+   }
+  ],
+  "gajarakshak": [
+   {
+    "mode": "gajarakshak",
+    "seed": 1,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 0,
+    "near_misses": 1,
+    "herds_exposed": 15,
+    "herds_missed": 0,
+    "detect_to_alert_p50_s": 6.0,
+    "detect_to_alert_p95_s": 9.0,
+    "alerts_total": 102,
+    "alerts_by_level": {
+     "ADVISORY": 62,
+     "STOP": 40
+    },
+    "actionable_alerts": 40,
+    "false_actionable_alerts": 0,
+    "hot_zones": [
+     [
+      "Z03",
+      18
+     ],
+     [
+      "Z06",
+      18
+     ],
+     [
+      "Z09",
+      12
+     ],
+     [
+      "Z05",
+      12
+     ],
+     [
+      "Z08",
+      10
+     ],
+     [
+      "Z02",
+      10
+     ],
+     [
+      "Z11",
+      8
+     ],
+     [
+      "Z07",
+      6
+     ],
+     [
+      "Z04",
+      4
+     ],
+     [
+      "Z12",
+      2
+     ],
+     [
+      "Z10",
+      2
+     ]
+    ],
+    "trains_passed": 142,
+    "train_delay_total_min": 64.0,
+    "train_delay_avg_min": 0.45,
+    "trains_restricted": 84,
+    "escalations": 19,
+    "lead_time_p50_s": 262.4,
+    "ack_p95_s": 54.8,
+    "verification": {
+     "requested": 129,
+     "confirmed": 97,
+     "rejected": 32,
+     "reused": 104
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 22496.5,
+    "video_equiv_gb": 777.6,
+    "wall_s": 8.3
+   },
+   {
+    "mode": "gajarakshak",
+    "seed": 2,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 0,
+    "near_misses": 1,
+    "herds_exposed": 10,
+    "herds_missed": 0,
+    "detect_to_alert_p50_s": 3.0,
+    "detect_to_alert_p95_s": 7.0,
+    "alerts_total": 62,
+    "alerts_by_level": {
+     "ADVISORY": 32,
+     "STOP": 28,
+     "CAUTION": 2
+    },
+    "actionable_alerts": 30,
+    "false_actionable_alerts": 2,
+    "hot_zones": [
+     [
+      "Z03",
+      14
+     ],
+     [
+      "Z12",
+      8
+     ],
+     [
+      "Z02",
+      8
+     ],
+     [
+      "Z08",
+      8
+     ],
+     [
+      "Z09",
+      6
+     ],
+     [
+      "Z07",
+      4
+     ],
+     [
+      "Z06",
+      4
+     ],
+     [
+      "Z04",
+      4
+     ],
+     [
+      "Z11",
+      4
+     ],
+     [
+      "Z10",
+      2
+     ]
+    ],
+    "trains_passed": 140,
+    "train_delay_total_min": 27.4,
+    "train_delay_avg_min": 0.2,
+    "trains_restricted": 48,
+    "escalations": 14,
+    "lead_time_p50_s": 341.0,
+    "ack_p95_s": 57.4,
+    "verification": {
+     "requested": 97,
+     "confirmed": 71,
+     "rejected": 26,
+     "reused": 52
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 20258.9,
+    "video_equiv_gb": 777.6,
+    "wall_s": 7.5
+   },
+   {
+    "mode": "gajarakshak",
+    "seed": 3,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 0,
+    "near_misses": 0,
+    "herds_exposed": 18,
+    "herds_missed": 0,
+    "detect_to_alert_p50_s": 3.0,
+    "detect_to_alert_p95_s": 8.0,
+    "alerts_total": 80,
+    "alerts_by_level": {
+     "ADVISORY": 30,
+     "STOP": 47,
+     "CAUTION": 3
+    },
+    "actionable_alerts": 50,
+    "false_actionable_alerts": 2,
+    "hot_zones": [
+     [
+      "Z06",
+      16
+     ],
+     [
+      "Z05",
+      14
+     ],
+     [
+      "Z03",
+      12
+     ],
+     [
+      "Z09",
+      12
+     ],
+     [
+      "Z08",
+      8
+     ],
+     [
+      "Z02",
+      6
+     ],
+     [
+      "Z11",
+      6
+     ],
+     [
+      "Z04",
+      4
+     ],
+     [
+      "Z10",
+      2
+     ]
+    ],
+    "trains_passed": 146,
+    "train_delay_total_min": 99.6,
+    "train_delay_avg_min": 0.68,
+    "trains_restricted": 101,
+    "escalations": 34,
+    "lead_time_p50_s": 311.6,
+    "ack_p95_s": 57.5,
+    "verification": {
+     "requested": 156,
+     "confirmed": 138,
+     "rejected": 18,
+     "reused": 151
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 22907.1,
+    "video_equiv_gb": 777.6,
+    "wall_s": 9.0
+   },
+   {
+    "mode": "gajarakshak",
+    "seed": 4,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 0,
+    "near_misses": 3,
+    "herds_exposed": 16,
+    "herds_missed": 0,
+    "detect_to_alert_p50_s": 4.0,
+    "detect_to_alert_p95_s": 7.0,
+    "alerts_total": 90,
+    "alerts_by_level": {
+     "STOP": 44,
+     "CAUTION": 3,
+     "ADVISORY": 43
+    },
+    "actionable_alerts": 47,
+    "false_actionable_alerts": 0,
+    "hot_zones": [
+     [
+      "Z06",
+      24
+     ],
+     [
+      "Z07",
+      12
+     ],
+     [
+      "Z09",
+      12
+     ],
+     [
+      "Z11",
+      12
+     ],
+     [
+      "Z03",
+      8
+     ],
+     [
+      "Z08",
+      8
+     ],
+     [
+      "Z05",
+      6
+     ],
+     [
+      "Z04",
+      4
+     ],
+     [
+      "Z10",
+      4
+     ]
+    ],
+    "trains_passed": 146,
+    "train_delay_total_min": 101.8,
+    "train_delay_avg_min": 0.7,
+    "trains_restricted": 107,
+    "escalations": 43,
+    "lead_time_p50_s": 249.7,
+    "ack_p95_s": 57.8,
+    "verification": {
+     "requested": 155,
+     "confirmed": 122,
+     "rejected": 33,
+     "reused": 150
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 22833.3,
+    "video_equiv_gb": 777.6,
+    "wall_s": 8.6
+   },
+   {
+    "mode": "gajarakshak",
+    "seed": 5,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 0,
+    "near_misses": 0,
+    "herds_exposed": 12,
+    "herds_missed": 0,
+    "detect_to_alert_p50_s": 4.0,
+    "detect_to_alert_p95_s": 11.0,
+    "alerts_total": 88,
+    "alerts_by_level": {
+     "ADVISORY": 50,
+     "STOP": 33,
+     "CAUTION": 5
+    },
+    "actionable_alerts": 38,
+    "false_actionable_alerts": 4,
+    "hot_zones": [
+     [
+      "Z03",
+      14
+     ],
+     [
+      "Z06",
+      12
+     ],
+     [
+      "Z09",
+      10
+     ],
+     [
+      "Z05",
+      10
+     ],
+     [
+      "Z07",
+      8
+     ],
+     [
+      "Z04",
+      8
+     ],
+     [
+      "Z11",
+      8
+     ],
+     [
+      "Z08",
+      6
+     ],
+     [
+      "Z10",
+      4
+     ],
+     [
+      "Z13",
+      4
+     ],
+     [
+      "Z12",
+      4
+     ]
+    ],
+    "trains_passed": 144,
+    "train_delay_total_min": 77.8,
+    "train_delay_avg_min": 0.54,
+    "trains_restricted": 83,
+    "escalations": 35,
+    "lead_time_p50_s": 289.0,
+    "ack_p95_s": 60.1,
+    "verification": {
+     "requested": 113,
+     "confirmed": 89,
+     "rejected": 24,
+     "reused": 75
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 21561.6,
+    "video_equiv_gb": 777.6,
+    "wall_s": 8.5
+   }
+  ],
+  "gajarakshak+kavach": [
+   {
+    "mode": "gajarakshak+kavach",
+    "seed": 1,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 0,
+    "near_misses": 0,
+    "herds_exposed": 15,
+    "herds_missed": 0,
+    "detect_to_alert_p50_s": 6.0,
+    "detect_to_alert_p95_s": 9.0,
+    "alerts_total": 102,
+    "alerts_by_level": {
+     "ADVISORY": 58,
+     "STOP": 40,
+     "CAUTION": 4
+    },
+    "actionable_alerts": 44,
+    "false_actionable_alerts": 4,
+    "hot_zones": [
+     [
+      "Z03",
+      18
+     ],
+     [
+      "Z06",
+      18
+     ],
+     [
+      "Z09",
+      12
+     ],
+     [
+      "Z05",
+      12
+     ],
+     [
+      "Z08",
+      10
+     ],
+     [
+      "Z02",
+      10
+     ],
+     [
+      "Z11",
+      8
+     ],
+     [
+      "Z07",
+      6
+     ],
+     [
+      "Z04",
+      4
+     ],
+     [
+      "Z12",
+      2
+     ],
+     [
+      "Z10",
+      2
+     ]
+    ],
+    "trains_passed": 142,
+    "train_delay_total_min": 72.2,
+    "train_delay_avg_min": 0.51,
+    "trains_restricted": 94,
+    "escalations": 0,
+    "lead_time_p50_s": 309.0,
+    "ack_p95_s": 13.8,
+    "verification": {
+     "requested": 127,
+     "confirmed": 97,
+     "rejected": 30,
+     "reused": 106
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 22496.5,
+    "video_equiv_gb": 777.6,
+    "wall_s": 8.5
+   },
+   {
+    "mode": "gajarakshak+kavach",
+    "seed": 2,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 0,
+    "near_misses": 1,
+    "herds_exposed": 10,
+    "herds_missed": 0,
+    "detect_to_alert_p50_s": 3.0,
+    "detect_to_alert_p95_s": 7.0,
+    "alerts_total": 62,
+    "alerts_by_level": {
+     "ADVISORY": 34,
+     "STOP": 28
+    },
+    "actionable_alerts": 28,
+    "false_actionable_alerts": 0,
+    "hot_zones": [
+     [
+      "Z03",
+      14
+     ],
+     [
+      "Z12",
+      8
+     ],
+     [
+      "Z02",
+      8
+     ],
+     [
+      "Z08",
+      8
+     ],
+     [
+      "Z09",
+      6
+     ],
+     [
+      "Z07",
+      4
+     ],
+     [
+      "Z06",
+      4
+     ],
+     [
+      "Z04",
+      4
+     ],
+     [
+      "Z11",
+      4
+     ],
+     [
+      "Z10",
+      2
+     ]
+    ],
+    "trains_passed": 140,
+    "train_delay_total_min": 27.2,
+    "train_delay_avg_min": 0.19,
+    "trains_restricted": 47,
+    "escalations": 0,
+    "lead_time_p50_s": 351.0,
+    "ack_p95_s": 13.6,
+    "verification": {
+     "requested": 96,
+     "confirmed": 70,
+     "rejected": 26,
+     "reused": 53
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 20258.9,
+    "video_equiv_gb": 777.6,
+    "wall_s": 7.6
+   },
+   {
+    "mode": "gajarakshak+kavach",
+    "seed": 3,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 0,
+    "near_misses": 1,
+    "herds_exposed": 18,
+    "herds_missed": 0,
+    "detect_to_alert_p50_s": 3.0,
+    "detect_to_alert_p95_s": 8.0,
+    "alerts_total": 80,
+    "alerts_by_level": {
+     "ADVISORY": 32,
+     "STOP": 45,
+     "CAUTION": 3
+    },
+    "actionable_alerts": 48,
+    "false_actionable_alerts": 0,
+    "hot_zones": [
+     [
+      "Z06",
+      16
+     ],
+     [
+      "Z05",
+      14
+     ],
+     [
+      "Z03",
+      12
+     ],
+     [
+      "Z09",
+      12
+     ],
+     [
+      "Z08",
+      8
+     ],
+     [
+      "Z02",
+      6
+     ],
+     [
+      "Z11",
+      6
+     ],
+     [
+      "Z04",
+      4
+     ],
+     [
+      "Z10",
+      2
+     ]
+    ],
+    "trains_passed": 146,
+    "train_delay_total_min": 99.2,
+    "train_delay_avg_min": 0.68,
+    "trains_restricted": 102,
+    "escalations": 0,
+    "lead_time_p50_s": 323.5,
+    "ack_p95_s": 13.7,
+    "verification": {
+     "requested": 157,
+     "confirmed": 140,
+     "rejected": 17,
+     "reused": 150
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 22907.1,
+    "video_equiv_gb": 777.6,
+    "wall_s": 8.7
+   },
+   {
+    "mode": "gajarakshak+kavach",
+    "seed": 4,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 0,
+    "near_misses": 2,
+    "herds_exposed": 16,
+    "herds_missed": 0,
+    "detect_to_alert_p50_s": 4.0,
+    "detect_to_alert_p95_s": 7.0,
+    "alerts_total": 89,
+    "alerts_by_level": {
+     "STOP": 44,
+     "CAUTION": 5,
+     "ADVISORY": 40
+    },
+    "actionable_alerts": 49,
+    "false_actionable_alerts": 2,
+    "hot_zones": [
+     [
+      "Z06",
+      24
+     ],
+     [
+      "Z07",
+      12
+     ],
+     [
+      "Z11",
+      12
+     ],
+     [
+      "Z09",
+      11
+     ],
+     [
+      "Z03",
+      8
+     ],
+     [
+      "Z08",
+      8
+     ],
+     [
+      "Z05",
+      6
+     ],
+     [
+      "Z04",
+      4
+     ],
+     [
+      "Z10",
+      4
+     ]
+    ],
+    "trains_passed": 146,
+    "train_delay_total_min": 99.8,
+    "train_delay_avg_min": 0.68,
+    "trains_restricted": 111,
+    "escalations": 0,
+    "lead_time_p50_s": 275.2,
+    "ack_p95_s": 13.9,
+    "verification": {
+     "requested": 153,
+     "confirmed": 127,
+     "rejected": 26,
+     "reused": 152
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 22833.3,
+    "video_equiv_gb": 777.6,
+    "wall_s": 8.9
+   },
+   {
+    "mode": "gajarakshak+kavach",
+    "seed": 5,
+    "window": "24.0 h simulated",
+    "sim_hours": 24.0,
+    "collisions": 0,
+    "near_misses": 0,
+    "herds_exposed": 12,
+    "herds_missed": 0,
+    "detect_to_alert_p50_s": 4.0,
+    "detect_to_alert_p95_s": 11.0,
+    "alerts_total": 88,
+    "alerts_by_level": {
+     "ADVISORY": 52,
+     "STOP": 33,
+     "CAUTION": 3
+    },
+    "actionable_alerts": 36,
+    "false_actionable_alerts": 2,
+    "hot_zones": [
+     [
+      "Z03",
+      14
+     ],
+     [
+      "Z06",
+      12
+     ],
+     [
+      "Z09",
+      10
+     ],
+     [
+      "Z05",
+      10
+     ],
+     [
+      "Z07",
+      8
+     ],
+     [
+      "Z04",
+      8
+     ],
+     [
+      "Z11",
+      8
+     ],
+     [
+      "Z08",
+      6
+     ],
+     [
+      "Z10",
+      4
+     ],
+     [
+      "Z13",
+      4
+     ],
+     [
+      "Z12",
+      4
+     ]
+    ],
+    "trains_passed": 145,
+    "train_delay_total_min": 75.8,
+    "train_delay_avg_min": 0.52,
+    "trains_restricted": 83,
+    "escalations": 0,
+    "lead_time_p50_s": 324.3,
+    "ack_p95_s": 13.9,
+    "verification": {
+     "requested": 109,
+     "confirmed": 85,
+     "rejected": 24,
+     "reused": 79
+    },
+    "towers_total": 18,
+    "towers_online": 18,
+    "open_tickets": 0,
+    "uplink_kb": 21561.6,
+    "video_equiv_gb": 777.6,
+    "wall_s": 7.9
+   }
+  ]
+ }
+}

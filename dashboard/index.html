@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GajaRakshak · Control Room</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="mark">GR</div>
+    <div>
+      <div class="title">GajaRakshak</div>
+      <div class="sub" id="sectionName">Ettimadai – Walayar · Palakkad Division</div>
+    </div>
+  </div>
+  <div class="clock">
+    <span id="clock">--:--</span>
+    <span class="badge" id="dayNight">NIGHT</span>
+  </div>
+  <div class="controls">
+    <div class="seg" id="modeSeg">
+      <button data-mode="none">No system</button>
+      <button data-mode="blanket">Blanket 45</button>
+      <button data-mode="gajarakshak">GajaRakshak</button>
+      <button data-mode="gajarakshak+kavach">+ Kavach</button>
+    </div>
+    <div class="seg" id="speedSeg">
+      <button data-speed="1">1×</button>
+      <button data-speed="4">4×</button>
+      <button data-speed="10">10×</button>
+      <button data-speed="30">30×</button>
+    </div>
+    <button class="ghost" id="pauseBtn">Pause</button>
+    <button class="ghost" id="resetBtn" title="Fresh world, no background traffic — for scripted demos">Reset (quiet)</button>
+  </div>
+</header>
+
+<section class="kpis" id="kpis"></section>
+<div class="sysbar" id="sysbar"></div>
+
+<main class="grid">
+  <section class="panel map">
+    <div class="panel-head">
+      <h2>Section schematic</h2>
+      <div class="legend">
+        <span><i class="dot conf"></i>confirmed elephant</span>
+        <span><i class="dot cand"></i>unverified</span>
+        <span><i class="dot rej"></i>rejected</span>
+        <label class="toggle"><input type="checkbox" id="gtToggle" /> show ground truth</label>
+      </div>
+    </div>
+    <canvas id="map"></canvas>
+    <div class="scenarios">
+      <span class="label">Inject scenario</span>
+      <button data-sc="herd_crossing">🐘 Herd crossing</button>
+      <button data-sc="false_positive">🔥 False positive</button>
+      <button data-sc="camera_failure">📵 Camera failure</button>
+      <button data-sc="fog">🌫 Lens fog</button>
+      <button data-sc="rush">⚠ Rush</button>
+      <button data-sc="restore">✓ Restore towers</button>
+    </div>
+  </section>
+
+  <aside class="panel alerts">
+    <div class="panel-head"><h2>Alerts</h2><span class="count" id="alertCount">0 active</span></div>
+    <div id="alertList" class="list"></div>
+  </aside>
+
+  <section class="panel assistant">
+    <div class="panel-head"><h2>Ask the control room</h2><span class="hint" id="asstModel">LLM agent · read-only tools</span></div>
+    <div class="asst-body">
+      <div class="chips" id="asstChips"></div>
+      <div class="chat" id="chat"><div class="empty">Ask about alerts, trains, zones or towers. The agent calls read-only tools on the live system and answers from what they return.</div></div>
+      <form class="ask" id="askForm" autocomplete="off">
+        <input id="askInput" maxlength="1000" placeholder="e.g. Why is the express on B line stopped?" />
+        <button type="submit" id="askBtn">Ask</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="panel trains">
+    <div class="panel-head"><h2>Trains · cab view</h2><span class="hint">what the loco pilot has acknowledged</span></div>
+    <div id="trainList" class="list"></div>
+  </section>
+
+  <section class="panel agents">
+    <div class="panel-head"><h2>Agents</h2><span class="hint">off the critical path</span></div>
+    <div class="agent-grid">
+      <div>
+        <h3>Verification</h3>
+        <div id="verifyList" class="mini"></div>
+      </div>
+      <div>
+        <h3>Device health</h3>
+        <div id="healthList" class="mini"></div>
+      </div>
+    </div>
+    <div class="insights">
+      <h3>Insights <button class="ghost small" id="insightsBtn">Generate handover note</button></h3>
+      <pre id="insightsOut">Press the button for a shift summary (Groq LLM if GROQ_API_KEY is set, template otherwise).</pre>
+    </div>
+  </section>
+
+  <aside class="panel feed">
+    <div class="panel-head"><h2>Event stream</h2></div>
+    <div id="feed" class="list feedlist"></div>
+  </aside>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

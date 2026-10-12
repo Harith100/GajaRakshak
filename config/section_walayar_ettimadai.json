@@ -1,0 +1,273 @@
+{
+ "section": {
+  "name": "Ettimadai \u2013 Walayar (Palakkad Division, Southern Railway)",
+  "length_m": 13000,
+  "zone_length_m": 1000,
+  "stations": [
+   {
+    "code": "ETMD",
+    "name": "Ettimadai",
+    "x": 0
+   },
+   {
+    "code": "WLH",
+    "name": "Walayar",
+    "x": 13000
+   }
+  ],
+  "lines": [
+   {
+    "id": "A",
+    "y": -20,
+    "direction": 1,
+    "label": "A line \u2192 Palakkad"
+   },
+   {
+    "id": "B",
+    "y": 20,
+    "direction": -1,
+    "label": "B line \u2192 Coimbatore"
+   }
+  ],
+  "approach_m": 4000
+ },
+ "hotspots": [
+  {
+   "id": "H1",
+   "x": 2700,
+   "name": "Kanjikode nullah"
+  },
+  {
+   "id": "H2",
+   "x": 5300,
+   "name": "Walayar dam fringe"
+  },
+  {
+   "id": "H3",
+   "x": 7900,
+   "name": "Madukkarai crossing"
+  },
+  {
+   "id": "H4",
+   "x": 10500,
+   "name": "Chavadi slope"
+  }
+ ],
+ "water_bodies": [
+  {
+   "x": 2500,
+   "y": -470,
+   "r": 150
+  },
+  {
+   "x": 5500,
+   "y": -520,
+   "r": 220
+  },
+  {
+   "x": 8100,
+   "y": -450,
+   "r": 130
+  },
+  {
+   "x": 10300,
+   "y": -500,
+   "r": 160
+  }
+ ],
+ "towers": [
+  {
+   "id": "T01",
+   "x": 1500,
+   "y": 70,
+   "link": "ofc"
+  },
+  {
+   "id": "T02",
+   "x": 2100,
+   "y": -70,
+   "link": "ofc"
+  },
+  {
+   "id": "T03",
+   "x": 2700,
+   "y": 70,
+   "link": "4g"
+  },
+  {
+   "id": "T04",
+   "x": 3300,
+   "y": -70,
+   "link": "ofc"
+  },
+  {
+   "id": "T05",
+   "x": 3900,
+   "y": 70,
+   "link": "ofc"
+  },
+  {
+   "id": "T06",
+   "x": 4500,
+   "y": -70,
+   "link": "4g"
+  },
+  {
+   "id": "T07",
+   "x": 5100,
+   "y": 70,
+   "link": "ofc"
+  },
+  {
+   "id": "T08",
+   "x": 5700,
+   "y": -70,
+   "link": "ofc"
+  },
+  {
+   "id": "T09",
+   "x": 6300,
+   "y": 70,
+   "link": "4g"
+  },
+  {
+   "id": "T10",
+   "x": 6900,
+   "y": -70,
+   "link": "ofc"
+  },
+  {
+   "id": "T11",
+   "x": 7500,
+   "y": 70,
+   "link": "ofc"
+  },
+  {
+   "id": "T12",
+   "x": 8100,
+   "y": -70,
+   "link": "4g"
+  },
+  {
+   "id": "T13",
+   "x": 8700,
+   "y": 70,
+   "link": "ofc"
+  },
+  {
+   "id": "T14",
+   "x": 9300,
+   "y": -70,
+   "link": "ofc"
+  },
+  {
+   "id": "T15",
+   "x": 9900,
+   "y": 70,
+   "link": "4g"
+  },
+  {
+   "id": "T16",
+   "x": 10500,
+   "y": -70,
+   "link": "ofc"
+  },
+  {
+   "id": "T17",
+   "x": 11100,
+   "y": 70,
+   "link": "ofc"
+  },
+  {
+   "id": "T18",
+   "x": 11700,
+   "y": -70,
+   "link": "4g"
+  }
+ ],
+ "camera": {
+  "range_along_m": 330,
+  "range_lateral_m": 170,
+  "fps_published": 1,
+  "bitrate_mbps_per_stream": 2.0,
+  "streams_per_tower": 2
+ },
+ "trains": {
+  "headway_min": [
+   14,
+   26
+  ],
+  "types": {
+   "express": {
+    "vmax_kmph": 65,
+    "accel": 0.35,
+    "decel_service": 0.55,
+    "decel_emergency": 0.9,
+    "length_m": 550,
+    "weight": 0.4
+   },
+   "passenger": {
+    "vmax_kmph": 55,
+    "accel": 0.4,
+    "decel_service": 0.6,
+    "decel_emergency": 0.95,
+    "length_m": 400,
+    "weight": 0.2
+   },
+   "freight": {
+    "vmax_kmph": 50,
+    "accel": 0.15,
+    "decel_service": 0.3,
+    "decel_emergency": 0.5,
+    "length_m": 680,
+    "weight": 0.4
+   }
+  }
+ },
+ "risk": {
+  "stop_dist_m": 25,
+  "caution_dist_m": 60,
+  "watch_dist_m": 150,
+  "caution_ttt_s": 120,
+  "zone_buffer_m": 200,
+  "conf_high": 0.62,
+  "conf_verify_low": 0.3,
+  "publish_min": 0.18,
+  "caution_kmph": 25,
+  "blind_kmph": 40,
+  "blanket_night_kmph": 45
+ },
+ "dispatch": {
+  "clear_hold_s": 120,
+  "ack_timeout_s": 30,
+  "notify_horizon_m": 7000,
+  "channels": {
+   "cug_sms": [
+    3,
+    8
+   ],
+   "ivr": [
+    10,
+    20
+   ],
+   "vhf_via_sm": [
+    20,
+    40
+   ]
+  },
+  "pilot_reaction_s": [
+   4,
+   12
+  ]
+ },
+ "health": {
+  "heartbeat_s": 10,
+  "offline_after_s": 30,
+  "blind_coverage_ratio": 0.6
+ },
+ "world": {
+  "herds_per_hour_night": 0.8,
+  "herds_per_hour_day": 0.15,
+  "start_hour": 19.0
+ }
+}

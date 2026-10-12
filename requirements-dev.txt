@@ -1,0 +1,3 @@
+-r requirements.txt
+pytest>=8
+amqtt>=0.11            # pure-Python MQTT broker for local infra tests (EMQX in docker-compose)

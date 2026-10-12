@@ -1,0 +1,60 @@
+# Full stack: EMQX (MQTT) + PostgreSQL with PostGIS & TimescaleDB + GajaRakshak core/dashboard.
+#
+#   export GROQ_API_KEY=gsk_...        # optional: assistant, LLM handover note, vision verifier
+#   docker compose up --build
+#   open http://localhost:8000          EMQX console: http://localhost:18083 (admin / public)
+#
+# Then, from another terminal on the host, stream a REAL detector into the same broker:
+#   pip install -r perception/requirements.txt && python -m perception.download_model
+#   python -m perception.run stream --mqtt mqtt://localhost:1883
+
+services:
+  emqx:
+    image: emqx/emqx:5.8.6
+    ports:
+      - "1883:1883"      # MQTT
+      - "18083:18083"    # dashboard
+    healthcheck:
+      test: ["CMD", "/opt/emqx/bin/emqx", "ctl", "status"]
+      interval: 5s
+      timeout: 5s
+      retries: 24
+    restart: unless-stopped
+
+  db:
+    image: timescale/timescaledb-ha:pg16     # PostgreSQL 16 + TimescaleDB + PostGIS
+    environment:
+      POSTGRES_PASSWORD: gajarakshak
+      POSTGRES_DB: gajarakshak
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/home/postgres/pgdata
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d gajarakshak"]
+      interval: 5s
+      timeout: 5s
+      retries: 24
+    restart: unless-stopped
+
+  app:
+    build: .
+    environment:
+      GR_MQTT_URL: mqtt://emqx:1883
+      GR_DATABASE_URL: postgresql://postgres:gajarakshak@db:5432/gajarakshak
+      GR_SEED: "7"
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
+      GROQ_REASONING_EFFORT: ${GROQ_REASONING_EFFORT:-medium}
+      GROQ_VISION_MODEL: ${GROQ_VISION_MODEL:-qwen/qwen3.8-27b}
+    ports:
+      - "8000:8000"
+    depends_on:
+      emqx:
+        condition: service_healthy
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  pgdata:

@@ -1,0 +1,7 @@
+{
+  "_comment": "Ground-plane calibration for one camera: 4 image points (normalised u,v; v=0 top) and where they lie on the section (x = chainage m, y = lateral m, + north). On site these come from surveyed markers during installation; these values are a DEMO calibration for a camera on tower T12 at Madukkarai crossing (H3), mounted south of the track and looking north.",
+  "tower_id": "T12R",
+  "image_points": [[0.0, 1.0], [1.0, 1.0], [0.0, 0.30], [1.0, 0.30]],
+  "section_points": [[7860, -60], [7940, -60], [7700, 160], [8100, 160]],
+  "horizon_v": 0.30
+}
